@@ -1,3 +1,4 @@
+//write a program to print your Bio-data.
 #include <stdio.h>
 int main() {
     char name[100];
