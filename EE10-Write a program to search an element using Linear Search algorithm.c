@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// Function to perform Linear Search
+// Function to perform Linear Search.
 int linearSearch(int arr[], int size, int key)
 {
     for (int i = 0; i < size; i++)
