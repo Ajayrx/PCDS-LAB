@@ -47,15 +47,17 @@ int main()
     printf("Enter the number of rows and columns for the second matrix: ");
     scanf("%d %d", &rows2, &cols2);
 
-    printf("Matrix multiplication is not possible. The number of columns in the first matrix must be equal to the number of rows in the second matrix.\n");
-    return 1;
+    
 
     if (cols1 != rows2)
     {
-
+        printf("Matrix multiplication is not possible. The number of columns in the first matrix must be equal to the number of rows in the second matrix.\n");
+        return 1;
+        
+    }
         readMatrix(mat1, rows1, cols1);
         readMatrix(mat2, rows2, cols2);
         multiplyMatrices(mat1, mat2, result, rows1, cols1, cols2); // display the result
         displayMatrix(result, rows1, cols2);
         return 0;
-    }
+}
